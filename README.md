@@ -66,6 +66,8 @@ Next, create a pull request for your code by pushing to your new branch:
 
 `git push --set-upstream origin <your-uniqname>`
 
+If you get a permissions error, ask me for access to the repo. ty
+
 Navigate to the repository, where you should see a big ol' "Compare & pull request" button. Click it.
 
 ![alt text](image.png)
