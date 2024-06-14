@@ -54,6 +54,8 @@ To write your first publisher/subscriber node, follow this tutorial (make sure y
 
 *Note #2: They named the package "py_pubsub" so just use common sense and replace that with your uniqname wherever they use it :)*
 
+Once you get the basic nodes working, modify it! Bonus points if you do something cool and creative. A basic idea would be to have the publisher output random numbers 1-100, and have the listener print its closest prime number.
+
 ## Turn in your project!
 
 Take a screenshot of your code running in the terminals successfully and send it to me (Cindy) over slack. Or show me irl. 
@@ -84,3 +86,7 @@ Click "Create pull request". Then, go to the top right (ish) of the screen and c
 ![alt text](image-1.png)
 
 If you pass all the vibe checks, I will approve your code and merge it. Congratulations and welcome to flight systems :D
+
+![alt_text](image-2.png)
+
+Credits to Teja our esteemed systems director for making this
