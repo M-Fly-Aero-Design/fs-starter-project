@@ -64,4 +64,4 @@ Next, create a pull request for your code by pushing to your new branch:
 
 `git push --set-upstream origin <your-uniqname>`
 
-Navigate to the repository, where you should see a big ol' 
+Navigate to the repository, where you should see a big ol'  
