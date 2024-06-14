@@ -2,6 +2,8 @@
 
 Hello prospective members :) Follow along this readme to learn about ROS installation, coding your first publisher/subscriber nodes, and git version control. 
 
+ALSO PLEASE MESSAGE ME IF YOU RUN INTO ANY ISSUES OR HAVE SUGGESTIONS xx
+
 ## Installing ROS
 
 Go to this link to and follow the instructions to install ROS Humble:
@@ -75,7 +77,7 @@ Add a title and description. In your description, include the following informat
 - Favorite artist or book or movie (and why). No this definitely isn't me looking for free recommendations
 - whatever else you want. it's your PR bro
 
-Click "Create pull request". Then, go to the top right (ish) of the screen and click "Reviewers", then search for my username. Add me as a reviewer. Also ping me on slack because I don't trust GitHub notifs
+Click "Create pull request". Then, go to the top right (ish) of the screen and click "Reviewers", then search for my username (elemelonwind). Add me as a reviewer. Also ping me on slack because I don't trust GitHub notifs
 
 ![alt text](image-1.png)
 
