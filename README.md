@@ -64,4 +64,19 @@ Next, create a pull request for your code by pushing to your new branch:
 
 `git push --set-upstream origin <your-uniqname>`
 
-Navigate to the repository, where you should see a big ol' 
+Navigate to the repository, where you should see a big ol' "Compare & pull request" button. Click it.
+
+![alt text](image.png)
+
+Add a title and description. In your description, include the following information:
+
+- Name, grade, major
+- What you hope to work on in MFly
+- Favorite artist or book or movie (and why). No this definitely isn't me looking for free recommendations
+- whatever else you want. it's your PR bro
+
+Click "Create pull request". Then, go to the top right (ish) of the screen and click "Reviewers", then search for my username. Add me as a reviewer. Also ping me on slack because I don't trust GitHub notifs
+
+![alt text](image-1.png)
+
+If you pass all the vibe checks, I will approve your code and merge it. Congratulations and welcome to flight systems :D
