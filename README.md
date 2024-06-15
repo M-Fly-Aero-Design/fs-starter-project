@@ -46,13 +46,33 @@ Make sure that you are in the correct folder (the repository folder under the wo
 
 `ros2 pkg create --build-type ament_python --license Apache-2.0 <your-uniqname>`
 
-## Write a publisher/subscriber
+## Basic publisher/subscriber
 
 To write your first publisher/subscriber node, follow this tutorial (make sure you're in the Python tab): https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Writing-A-Simple-Py-Publisher-And-Subscriber.html
 
 *Note: You can skip the first step, "Create a package", as you've already done that.* 
 
 *Note #2: They named the package "py_pubsub" so just use common sense and replace that with your uniqname wherever they use it :)*
+
+
+## Advanced publisher/subscriber
+
+Hey! This part is for those of you who feel confident enough in your coding skills to do something a little more complicated. The idea is to take the basic ROS template from above and do the following:
+
+1. Figure out a way to have two-way communcation between nodes. i.e, instead of having a node be either a publisher or a subscriber, have it be both.
+
+2. After you figure out how to do that, we're gonna have a little more fun with our communication. This time, make one of the nodes transmit a random number continuously. The other node should receive this number and print it to the terminal, but after it receives a total of ten messages, it should send a 'STOP' signal to the first node. Once the first node receives this signal, it should stop transmitting numbers. Print out a messgae to the terminal to let the user know that the communication has ended.
+
+3. If you have any other ideas that you want to play around with, go crazy. This is your time to experiment and learn.
+
+Here's an example of what the output should look like (I coded this example so that FLASH corresponds to the transmitter, and THUNDER to the receiver):
+
+![alt text](FLASH.png)
+![alt text](THUNDER.png)
+
+Note how the transmitter stops transmitting numbers after the receiver sends the 'STOP' signal. Anyways, have fun making this!
+
+FYI, I (Teja) convinced Cindy to add this part in, so if you're feeling like you want to bash your head against a wall, you can blame me. Good luck, though!
 
 ## Turn in your project!
 

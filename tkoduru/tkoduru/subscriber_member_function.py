@@ -17,20 +17,42 @@ from rclpy.node import Node
 
 from std_msgs.msg import String
 
+MESSAGES_REQUIRED = 10 # Number of messages to be received before stopping the subscriber
 
 class MinimalSubscriber(Node):
 
     def __init__(self):
         super().__init__('minimal_subscriber')
+
+        # Listen to FLASH (Signals outputted by the publisher)
         self.subscription = self.create_subscription(
             String,
-            'topic',
+            'FLASH',
             self.listener_callback,
             10)
         self.subscription  # prevent unused variable warning
+        self.current_message = 0 # Number of messages received so far
+
+        # Transmit to THUNDER (Tell the publisher to stop transmitting messages)
+        self.publisher_ = self.create_publisher(String, 'THUNDER', 10)
+        timer_period = 0.5
+        self.timer = self.create_timer(timer_period, self.timer_callback)
+        self.i = 0
 
     def listener_callback(self, msg):
-        self.get_logger().info('I heard: "%s"' % msg.data)
+        if(self.current_message < MESSAGES_REQUIRED):
+            self.get_logger().info('THUNDER: "%s"' % msg.data)
+            self.current_message += 1
+
+    def timer_callback(self):
+        msg = String()
+        msg.data = 'STOP'
+        
+        if(self.current_message >= MESSAGES_REQUIRED):
+            self.publisher_.publish(msg)
+            self.get_logger().info('SENDING "%s"' % msg.data)
+            self.destroy_node()
+            rclpy.shutdown()
 
 
 def main(args=None):
