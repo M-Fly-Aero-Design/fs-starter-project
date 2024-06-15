@@ -14,26 +14,42 @@
 
 import rclpy
 from rclpy.node import Node
+import random
 
 from std_msgs.msg import String
 
+SIGNAL_STATUS = 1 # Continue transmitting messages until STOP signal is received
 
 class MinimalPublisher(Node):
 
     def __init__(self):
         super().__init__('minimal_publisher')
-        self.publisher_ = self.create_publisher(String, 'topic', 10)
+
+        # Transmit to FLASH (Signals outputted by the subscriber)
+        self.publisher_ = self.create_publisher(String, 'FLASH', 10)
         timer_period = 0.5  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+
+        # Listen to THUNDER (Signals inputted by the subscriber)
+        self.subscription = self.create_subscription(
+            String,
+            'THUNDER',
+            self.listener_callback,
+            10)
+        self.subscription # prevent unused variable warning
+
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'Hello World: %d' % self.i
+        msg.data = f"{random.randint(0, 100)}"
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
-        self.i += 1
+        self.get_logger().info('FLASH: "%s"' % msg.data)
 
+    def listener_callback(self, msg):
+        if(msg.data == 'STOP'):
+            self.get_logger().info('STOP RECIEVED.')
+            self.destroy_node()
+            rclpy.shutdown()
 
 def main(args=None):
     rclpy.init(args=args)
