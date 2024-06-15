@@ -54,10 +54,9 @@ To write your first publisher/subscriber node, follow this tutorial (make sure y
 
 *Note #2: They named the package "py_pubsub" so just use common sense and replace that with your uniqname wherever they use it :)*
 
-
 ## Advanced publisher/subscriber
 
-Hey! This part is for those of you who feel confident enough in your coding skills to do something a little more complicated. The idea is to take the basic ROS template from above and do the following:
+This part is for those of you who feel confident enough in your coding skills to do something a little more complicated. The idea is to take the basic ROS template from above and do the following:
 
 1. Figure out a way to have two-way communcation between nodes. i.e, instead of having a node be either a publisher or a subscriber, have it be both.
 
@@ -104,3 +103,7 @@ Click "Create pull request". Then, go to the top right (ish) of the screen and c
 ![alt text](image-1.png)
 
 If you pass all the vibe checks, I will approve your code and merge it. Congratulations and welcome to flight systems :D
+
+![alt_text](image-2.png)
+
+Credits to Teja our esteemed systems director for making this
