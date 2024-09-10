@@ -9,6 +9,8 @@ ALSO PLEASE MESSAGE ME IF YOU RUN INTO ANY ISSUES OR HAVE SUGGESTIONS xx
 Go to this link to and follow the instructions to install ROS Humble:
 https://docs.ros.org/en/humble/Installation.html
 
+Make sure you have Ubuntu 22 NOT 24!!
+
 _Note: Please use Linux. Windows doesn't support using dependencies in ROS. Also, I can help you if you run into any issues, since I use WSL (which EECS classes also recommend if you have a Windows computer)._
 
 _Note #2: Make sure every ROS documentation tutorial you follow is for ROS HUMBLE. The newest version, Jazzy, is incompatible with our flight computer, the Jetson Nano._
