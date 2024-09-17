@@ -4,16 +4,16 @@ Hello prospective members :) Follow along this readme to learn about ROS install
 
 ALSO PLEASE MESSAGE ME IF YOU RUN INTO ANY ISSUES OR HAVE SUGGESTIONS xx
 
+## Setting up your Linux environment
+
+Windows users should use WSL, and Mac users should use VMWare. ROS works best on Linux, and also lets us standardize commands for future documentation. Make sure you use Ubuntu 22, not 24!! Since all the leads this year use Windows, you can ask any of us for setup help with that. Mac users can use [this doc](https://docs.google.com/document/d/1p4TkVjJj5vInpP_gu4oKguMVJU0sb3ghNCm1I3TPWz0/edit?usp=drive_link) (thank you Brandon)
+
 ## Installing ROS
 
 Go to this link to and follow the instructions to install ROS Humble:
 https://docs.ros.org/en/humble/Installation.html
 
-Make sure you have Ubuntu 22 NOT 24!!
-
-_Note: Please use Linux. Windows doesn't support using dependencies in ROS. Also, I can help you if you run into any issues, since I use WSL (which EECS classes also recommend if you have a Windows computer)._
-
-_Note #2: Make sure every ROS documentation tutorial you follow is for ROS HUMBLE. The newest version, Jazzy, is incompatible with our flight computer, the Jetson Nano._
+_Note: Make sure every ROS documentation tutorial you follow is for ROS HUMBLE. The newest version, Jazzy, is incompatible with our flight computer, the Jetson Nano._
 
 Next, configure your environment: https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Configuring-ROS2-Environment.html
 
