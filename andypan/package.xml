@@ -3,10 +3,13 @@
 <package format="3">
   <name>andypan</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="andypan@todo.todo">andypan</maintainer>
-  <license>Apache-2.0</license>
 
+  <description>Examples of minimal publisher/subscriber using rclpy</description>
+  <maintainer email="andypan@umich.edu">Andy Pan</maintainer>
+  <license>Apache License 2.0</license>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+	
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
   <test_depend>ament_pep257</test_depend>

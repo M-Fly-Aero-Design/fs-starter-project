@@ -13,13 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='andypan',
-    maintainer_email='andypan@todo.todo',
-    description='TODO: Package description',
+    maintainer='Andy Pan',
+    maintainer_email='andypan@umich.edu',
+    description='Examples of minimal publisher/subscriber using rclpy',
     license='Apache-2.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        	'talker = andypan.publisher_member_function:main',
+        	'listener = andypan.subscriber_member_function:main',
         ],
     },
 )
